@@ -11,6 +11,16 @@
 
 (function() {
 
-    // your code here
+  var age = prompt("Age?"),
+      sexe = prompt("sexe?"),
+      ville = prompt("ville?");
 
+
+var confirmation = confirm (age + sexe + ville + "Confirmez votre ASV, cliquez ok!");
+while (confirmation === false){
+    age = prompt("Age?"),
+    sexe = prompt("sexe?"),
+    ville = prompt("ville?");
+    confirmation = confirm(age + sexe + ville + "Confirmez votre ASV, cliquez ok!");
+}
 })();

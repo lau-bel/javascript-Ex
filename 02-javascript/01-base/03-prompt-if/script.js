@@ -11,6 +11,13 @@
 
 (function() {
 
-  // your code here
+var answer = prompt ("Would you like some cake?");
+  if (answer === "yes") {
+    alert("congrats for your paper");
+  }
+  else {
+    alert("You can't refuse cake honey!");
+  };
+
 
 })();
