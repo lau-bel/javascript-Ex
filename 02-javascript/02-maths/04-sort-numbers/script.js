@@ -14,8 +14,11 @@
     // to get the value of an input: document.getElementById("element-id").value
 
     document.getElementById("run").addEventListener("click", function() {
-
-        // your code here
+      var numb = document.getElementById("numbers").value.split(",");
+      for (x=0; x<numb.length; x++){
+        numb[x]=parseFloat(numb[x]);
+      }
+      console.log(numb);
 
     });
 

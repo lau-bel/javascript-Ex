@@ -13,7 +13,11 @@
 
     document.getElementById("run").addEventListener("click", function() {
 
-        // your code here
+for (x=0; x<=21; x++){
+  if (x%2===0){
+    alert(x*x);
+  }
+}
 
     });
 
