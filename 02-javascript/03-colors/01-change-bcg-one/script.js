@@ -11,6 +11,20 @@
 
 (function() {
 
-    // your code here
+ document.getElementById('red').addEventListener("click", function(){
+ document.documentElement.style.backgroundColor = "red";
+});
+
+ document.getElementById('green').addEventListener("click", function(){
+ document.documentElement.style.backgroundColor = "green";
+});
+
+ document.getElementById('yellow').addEventListener("click", function(){
+ document.documentElement.style.backgroundColor = "yellow";
+});
+
+ document.getElementById('blue').addEventListener("click", function(){
+ document.documentElement.style.backgroundColor = "blue";
+});
 
 })();

@@ -18,8 +18,13 @@
       for (x=0; x<numb.length; x++){
         numb[x]=parseFloat(numb[x]);
       }
-      console.log(numb);
 
-    });
+      numb.sort(function compareNombres(a, b){
+      return a - b;
+      });
+
+     alert(numb);
+
+  });
 
 })();
