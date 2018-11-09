@@ -39,6 +39,10 @@
         },
     ];
 
-    // your code here
+      document.getElementById('run').addEventListener("click", function(){
+        var firstnametable = people.map(function(polpot){
+        console.log(polpot.firstname);
+      });
+  });
 
 })();

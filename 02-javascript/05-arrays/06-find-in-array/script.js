@@ -89,6 +89,20 @@
         },
     ];
 
-    // your code here
+    document.getElementById('run').addEventListener("click", function(){
 
+
+      var emailtable = people.map(function(x){
+
+        if (x.firstname==="Jean"){
+          console.log(x.email);
+          console.log(people.indexOf(x));
+
+        }
+
+      });
+
+
+
+      });
 })();

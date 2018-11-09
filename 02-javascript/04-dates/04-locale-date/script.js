@@ -11,8 +11,13 @@
 
 (function() {
 
-    // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
 
-    // your code here
+  var now = new Date();
+
+  var options = {weekday:"long" , year: "numeric" , month: "long" ,  day: "numeric" , hour: "numeric" , minute: "numeric"};
+
+  var time = now.toLocaleDateString("fr-FR", options);
+
+  document.getElementById("target").innerHTML = time;
 
 })();

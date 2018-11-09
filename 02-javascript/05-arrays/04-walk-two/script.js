@@ -26,6 +26,11 @@
         "cerise",
     ];
 
-    // your code here
+    document.getElementById('run').addEventListener("click", function(){
 
+      var element = fruits.map(function(x){
+
+      console.log(x);
+      });
+    });
 })();
