@@ -28,6 +28,14 @@
         "cerise",
     ];
 
-    // your code here
+      document.getElementById('run').addEventListener("click", function(){
+        var cleanedArray = []; 
+        for (var i = 0; i <fruits.length; i++) {
+          if (cleanedArray.indexOf(fruits[i])==-1){
+            cleanedArray.push(fruits[i]);
+          }
+        }
+console.log(cleanedArray);
 
+      });
 })();
