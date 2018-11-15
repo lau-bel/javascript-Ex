@@ -11,6 +11,9 @@
 
 (function() {
 
-    // your code here
+  x = document.getElementsByClassName("target")[0];
+  x.innerText="owned!";
+
+
 
 })();

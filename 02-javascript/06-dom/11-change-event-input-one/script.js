@@ -10,7 +10,15 @@
 // You will have time to focus on it later.
 
 (function() {
+  var count = document.getElementById('counter');
+  var password = document.getElementById('pass-one');
+  var passwordContent = password.value;
+  password.setAttribute("maxlength" , 10);
 
-    // your code here
 
+  document.getElementById('pass-one').addEventListener("keyup",function(){
+    passwordContent = password.value;
+    count.innerHTML = passwordContent.length + "/10";
+
+  });
 })();

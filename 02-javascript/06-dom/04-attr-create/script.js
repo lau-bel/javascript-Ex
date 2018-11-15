@@ -10,7 +10,11 @@
 // You will have time to focus on it later.
 
 (function() {
-
-    // your code here
-
+var div1 = document.getElementById("source");
+var inter = div1.getAttribute("data-image");
+var b = document.getElementById("target");
+var image = document.createElement('img');
+b.appendChild(image);
+image.setAttribute("src", inter);
+console.log(inter);
 })();

@@ -11,6 +11,25 @@
 
 (function() {
 
-    // your code here
+  var div1 = document.getElementById("target");
+  var tbl= document.createElement("table");
+  var tblBody = document.createElement("tbody");
 
+  for (var i = 1; i<11; i++){
+    var row = document.createElement("tr");
+    for (var j=1; j<11; j++) {
+      var cell = document.createElement('td');
+      var result = i*j;
+      var cellText= document.createTextNode (i + "x" + j + "=" + result);
+      cell.appendChild(cellText);
+      row.appendChild(cell);
+    }
+    tblBody.appendChild(row);
+
+  }
+console.log("hello");
+
+  tbl.appendChild(tblBody);
+  div1.appendChild(tbl);
+  tbl.setAttribute ("border", "2");
 })();
