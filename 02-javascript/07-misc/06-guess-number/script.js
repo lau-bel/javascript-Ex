@@ -10,7 +10,38 @@
 // You will have time to focus on it later.
 
 (function() {
+var nummer = Math.floor((Math.random()* 100));
 
-    // your code here
+console.log(nummer);
+
+var ask = prompt ("Entrez un numéro entre 1 et 100.");
+
+var i = 1;
+
+function questions() {
+
+  if ( ask < nummer) {
+
+    ask = prompt ("Entrez un numéro plus grand");
+    i++;
+
+
+  }
+
+  else if (ask > nummer){
+
+    ask = prompt ("Entrez un numéro plus petit");
+    i++;
+  }
+
+  else {
+
+    alert("bravo c'est le bon numéro! Vous avez réussi en "+i+" essais!");
+
+  }
+
+  questions();
+
+}questions();
 
 })();
